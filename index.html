@@ -5,54 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio de Proyectos</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/carousel.js"></script>
 </head>
 <body>
 
 <header>
     <h1>Bienvenido a mi Portafolio de Proyectos</h1>
-    <p>Explora mis proyectos de software y las asignaturas que imparto</p>
+    <p>Explora mis proyectos de software</p>
 </header>
 
 <main class="main-container">
     <div class="grid-container">
-        <section id="section-projects">
-            <h2 class="section-title">Proyectos Públicos</h2>
-            <div class="projects">
-                <div class="my-card">
-                    <h3><a href="https://github.com/jcalvosanchez/surecat" target="_blank">Surecat</a></h3>
-                    <p>Carga escenarios de tests desde Excel a Java</p>
+        <div class="carousel-container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="quote-image" src="https://quotefancy.com/media/wallpaper/3840x2160/17717-Mahatma-Gandhi-Quote-The-difference-between-what-we-do-and-what-we.jpg" alt="Quote image">
+                        <blockquote class="quote">
+                            "La diferencia entre lo que puedes hacer, y lo que haces, bastaría para cambiar el mundo."
+                        </blockquote>
+                        <cite class="author">Mahatma Gandhi</cite>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="quote-image" src="https://external-preview.redd.it/5FkQV4CaOfkyXflYxpKEdrN6v3Dp2tpXu1Fa_V7pw80.jpg?width=640&crop=smart&auto=webp&s=97923d14f772424bc8ab409111b629f50a69f5fe" alt="Quote image">
+                        <blockquote class="quote">
+                            "La perfección se alcanza, no cuando no hay nada más que añadir, sino cuando no queda nada más por quitar."
+                        </blockquote>
+                        <cite class="author">Antoine de Saint-Exupéry</cite>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="quote-image" src="https://www.brainyquote.com/photos_tr/en/a/abrahammaslow/126079/abrahammaslow1-2x.jpg" alt="Quote image">
+                        <blockquote class="quote">
+                            "Si solo tienes un martillo, todos los problemas parecen clavos."
+                        </blockquote>
+                        <cite class="author">Abraham Maslow</cite>
+                    </div>
+                </div>
+                <div class="swiper-controls">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
-        </section>
-        <section id="section-katas">
-            <h2 class="section-title">Katas</h2>
-            <div class="katas">
-                <div class="my-card">
-                    <h3><a href="https://github.com/jcalvosanchez/romannumbers" target="_blank">Roman Numbers</a></h3>
-                    <p>Code kata - Roman numbers to Natural numbers and viceversa</p>
+        </div>
+        <div class="sections-list">
+            <section id="section-projects">
+                <h2 class="section-title">Proyectos Públicos</h2>
+                <div class="projects">
+                    <div class="my-card">
+                        <h3><a href="https://github.com/jcalvosanchez/surecat" target="_blank">Surecat</a></h3>
+                        <p>Carga escenarios de tests desde Excel a Java</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="section-subjects">
-            <h2 class="section-title">Proyectos de Asignaturas</h2>
-            <div class="my-card">
-                <h3>PMDM - Programación Multimedia y Dispositivos Móviles</h3>
-                <ul>
-                    <li>Teclado Numérico</li>
-                    <li>Intent básico</li>
-                </ul>
-            </div>
-            <div class="my-card">
-                <h3>PSYP - Programación de Servicios y Procesos</h3>
-                <ul>
-                    <li><a href="https://github.com/jcalvosanchez/subjects/tree/main/psyp#ciclo-de-vida-de-un-proceso" target="_blank">Multi-Proceso - Ciclo de Vida Proceso</a></li>
-                    <li><a href="https://github.com/jcalvosanchez/subjects/tree/main/psyp#nuevo-proceso-java" target="_blank">Multi-Proceso - Nuevo Proceso Java</a></li>
-                    <li>Alimentar Animales</li>
-                    <li>Semáforo</li>
-                    <li><a href="https://github.com/jcalvosanchez/subjects/tree/main/psyp#hello-world-server-and-client" target="_blank">Programación Distribuida - Hello World Server Client</a></li>
-                </ul>
-            </div>
-        </section>
+            </section>
+            <section id="section-katas">
+                <h2 class="section-title">Katas</h2>
+                <div class="katas">
+                    <div class="my-card">
+                        <h3><a href="https://github.com/jcalvosanchez/romannumbers" target="_blank">Roman Numbers</a></h3>
+                        <p>Code kata - Roman numbers to Natural numbers and viceversa</p>
+                    </div>
+                </div>
+            </section>
+            <section id="section-subjects">
+                <h2 class="section-title">Proyectos de Asignaturas</h2>
+                <div class="my-card">
+                    <h3>PMDM - Programación Multimedia y Dispositivos Móviles</h3>
+                    <ul>
+                        <li>Teclado Numérico</li>
+                        <li>Intent básico</li>
+                    </ul>
+                </div>
+                <div class="my-card">
+                    <h3>PSYP - Programación de Servicios y Procesos</h3>
+                    <ul>
+                        <li><a href="https://github.com/jcalvosanchez/subjects/tree/main/psyp#ciclo-de-vida-de-un-proceso" target="_blank">Multi-Proceso - Ciclo de Vida Proceso</a></li>
+                        <li><a href="https://github.com/jcalvosanchez/subjects/tree/main/psyp#nuevo-proceso-java" target="_blank">Multi-Proceso - Nuevo Proceso Java</a></li>
+                        <li>Alimentar Animales</li>
+                        <li>Semáforo</li>
+                        <li><a href="https://github.com/jcalvosanchez/subjects/tree/main/psyp#hello-world-server-and-client" target="_blank">Programación Distribuida - Hello World Server Client</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </div>
 </main>
 
