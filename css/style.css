@@ -21,37 +21,6 @@ header {
     gap: 20px;
 }
 
-.sections-list {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-}
-#section-projects, #section-katas, #section-subjects {
-    line-height: 1.6
-}
-.projects, ,.katas, .subjects {
-    display: flex;
-    flex-wrap: wrap;
-}
-.my-card {
-    background-color: white;
-    margin: 10px 10px 10px 0px;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.my-card h3 {
-    margin-top: 0;
-}
-.my-card a {
-    text-decoration: none;
-    color: #007BFF;
-}
-.my-card a:hover {
-    text-decoration: underline;
-}
-
 /* Responsividad: en pantallas pequeñas, los elementos se apilan en una sola columna */
 @media (max-width: 768px) {
     .grid-container {
