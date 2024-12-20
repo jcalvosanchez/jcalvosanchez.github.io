@@ -1,14 +1,7 @@
 
-.code-projects-list {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-}
-
-#section-projects, #section-katas, #section-subjects {
+/*#section-projects, #section-katas, #section-subjects {
     line-height: 1.6
-}
+}*/
 .projects, ,.katas, .subjects {
     display: flex;
     flex-wrap: wrap;

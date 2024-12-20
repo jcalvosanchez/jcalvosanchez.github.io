@@ -21,6 +21,26 @@ header {
     gap: 20px;
 }
 
+.grid-column {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.highlights-list {
+
+}
+.software-projects-list {
+
+}
+
+.grid-column-item {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
 /* Responsividad: en pantallas pequeñas, los elementos se apilan en una sola columna */
 @media (max-width: 768px) {
     .grid-container {
