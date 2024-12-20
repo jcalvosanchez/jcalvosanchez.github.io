@@ -13,11 +13,13 @@
 
 .carousel-slide {
     min-width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
 }
 
 .carousel img {
     width: 100%;
+    max-width: 100%;
     display: block;
 }
 
@@ -40,4 +42,8 @@ button.prev {
 
 button.next {
     right: 10px;
+}
+
+@media (max-width: 768px) {
+
 }

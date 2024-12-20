@@ -47,6 +47,10 @@ header {
         grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
     }
 
+    .grid-column {
+        overflow: hidden;
+    }
+
     .header-container h1 {
         font-size: 2rem;
     }
