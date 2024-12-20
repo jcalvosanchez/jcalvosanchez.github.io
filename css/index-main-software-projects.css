@@ -23,3 +23,12 @@
 .my-card a:hover {
     text-decoration: underline;
 }
+.badges {
+    display: flex;
+    gap: 8px;
+}
+
+.badges img {
+    height: 24px; /* Tamaño ajustable para las badges */
+    margin-right: 4px;
+}
