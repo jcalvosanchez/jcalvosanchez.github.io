@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio de Proyectos</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/carousel.js"></script>
+    <link rel="stylesheet" href="css/index-main-carousel.css">
+    <link rel="stylesheet" href="css/index-main-vip-clients.css">
+    <link rel="stylesheet" href="css/index-main-software-projects.css">
+    <script src="js/index-main-carousel.js"></script>
 </head>
 <body>
 
@@ -18,39 +19,36 @@
 
 <main class="main-container">
     <div class="grid-container">
-        <div class="carousel-container">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img class="quote-image" src="https://quotefancy.com/media/wallpaper/3840x2160/17717-Mahatma-Gandhi-Quote-The-difference-between-what-we-do-and-what-we.jpg" alt="Quote image">
-                        <blockquote class="quote">
-                            "La diferencia entre lo que puedes hacer, y lo que haces, bastaría para cambiar el mundo."
-                        </blockquote>
-                        <cite class="author">Mahatma Gandhi</cite>
+        <div class="grid-column highlights-list">
+            <section id="carousel-container" class="grid-column-item">
+                <div class="carousel">
+                    <button class="prev">‹</button>
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="https://pbs.twimg.com/media/Dg1ygwyXUAA8-bA.jpg" alt="Quote image">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://quotefancy.com/media/wallpaper/3840x2160/17717-Mahatma-Gandhi-Quote-The-difference-between-what-we-do-and-what-we.jpg" alt="Quote image">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://www.brainyquote.com/photos_tr/en/a/abrahammaslow/126079/abrahammaslow1-2x.jpg" alt="Quote image">
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img class="quote-image" src="https://external-preview.redd.it/5FkQV4CaOfkyXflYxpKEdrN6v3Dp2tpXu1Fa_V7pw80.jpg?width=640&crop=smart&auto=webp&s=97923d14f772424bc8ab409111b629f50a69f5fe" alt="Quote image">
-                        <blockquote class="quote">
-                            "La perfección se alcanza, no cuando no hay nada más que añadir, sino cuando no queda nada más por quitar."
-                        </blockquote>
-                        <cite class="author">Antoine de Saint-Exupéry</cite>
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="quote-image" src="https://www.brainyquote.com/photos_tr/en/a/abrahammaslow/126079/abrahammaslow1-2x.jpg" alt="Quote image">
-                        <blockquote class="quote">
-                            "Si solo tienes un martillo, todos los problemas parecen clavos."
-                        </blockquote>
-                        <cite class="author">Abraham Maslow</cite>
-                    </div>
+                    <button class="next">›</button>
                 </div>
-                <div class="swiper-controls">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+            </section>
+            <section id="vip-clients" class="grid-column-item">
+                <h2>Principales Clientes</h2>
+                <div class="vip-client-logos">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnTE9pXIZTssvs4gumVCBdiec2OWRwuTLnIg&s" alt="Logo Maersk Line" class="vip-client-logo">
+                    <img src="https://biovegen.org/wp-content/uploads/2020/04/Logo_BayerCropScience.png" alt="Logo Bayer Crop Science" class="vip-client-logo">
+                    <img src="https://www.industry4europe.eu/assets/Uploads/DG-COMP__ScaleMaxWidthWzYwMF0.jpg" alt="Logo DG Competition" class="vip-client-logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlEye_8WLd5wfGFGcvnpkpmy16x1doWftBGQ&s" alt="Logo BNE" class="vip-client-logo">
                 </div>
-            </div>
+            </section>
         </div>
-        <div class="sections-list">
-            <section id="section-projects">
+        <div class="grid-column software-projects-list">
+            <section id="section-projects" class="grid-column-item">
                 <h2 class="section-title">Proyectos Públicos</h2>
                 <div class="projects">
                     <div class="my-card">
@@ -59,7 +57,7 @@
                     </div>
                 </div>
             </section>
-            <section id="section-katas">
+            <section id="section-katas" class="grid-column-item">
                 <h2 class="section-title">Katas</h2>
                 <div class="katas">
                     <div class="my-card">
@@ -68,7 +66,7 @@
                     </div>
                 </div>
             </section>
-            <section id="section-subjects">
+            <section id="section-subjects" class="grid-column-item">
                 <h2 class="section-title">Proyectos de Asignaturas</h2>
                 <div class="my-card">
                     <h3>PMDM - Programación Multimedia y Dispositivos Móviles</h3>
