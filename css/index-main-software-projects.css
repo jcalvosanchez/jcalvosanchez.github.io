@@ -26,9 +26,22 @@
 .badges {
     display: flex;
     gap: 8px;
+    margin-bottom: 10px;
 }
 
 .badges img {
-    height: 24px; /* Tamaño ajustable para las badges */
+    height: 24px;
     margin-right: 4px;
+}
+
+@media (max-width: 768px) {
+    .badges {
+        gap: 4px;
+        margin-bottom: 5px;
+    }
+
+    .badges img {
+        height: 12px;
+        margin-right: 2px;
+    }
 }
