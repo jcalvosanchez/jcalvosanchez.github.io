@@ -3,14 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const slides = Array.from(track.children);
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
-    const slideWidth = slides[0].getBoundingClientRect().width;
 
+    let slideWidth = slides[0].getBoundingClientRect().width;
     let currentSlide = 0;
 
-    // Posicionar las diapositivas
-    slides.forEach((slide, index) => {
-        slide.style.left = `${index * slideWidth}px`;
-    });
+    const setSlidePositions = () => {
+        slideWidth = slides[0].getBoundingClientRect().width;
+        slides.forEach((slide, index) => {
+            slide.style.left = `${index * slideWidth}px`;
+        });
+        moveToSlide(currentSlide); // Asegura que el carrusel esté correctamente alineado.
+    };
 
     const moveToSlide = (currentIndex) => {
         track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
@@ -45,4 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
             moveToSlide(currentSlide);
         }, intervalTime);
     };
+
+    // Escucha el evento resize para recalcular el ancho de las diapositivas.
+    window.addEventListener('resize', setSlidePositions);
+
+    // Inicializa las posiciones de las diapositivas al cargar.
+    setSlidePositions();
 });
