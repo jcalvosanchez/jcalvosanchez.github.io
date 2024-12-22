@@ -6,21 +6,21 @@
     display: flex;
     flex-wrap: wrap;
 }
-.my-card {
+.my-software-project {
     background-color: white;
     margin: 10px 10px 10px 0px;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.my-card h3 {
+.my-software-project h3 {
     margin-top: 0;
 }
-.my-card a {
+.my-software-project a {
     text-decoration: none;
     color: #007BFF;
 }
-.my-card a:hover {
+.my-software-project a:hover {
     text-decoration: underline;
 }
 .badges {
