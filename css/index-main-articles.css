@@ -51,8 +51,5 @@
 }
 
 @media (max-width: 768px) {
-    .article-card img {
-        max-height: 50px;
-        min-height: 50px;
-    }
+
 }
