@@ -1,4 +1,4 @@
-#main-articles {
+#my-main-articles {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
@@ -6,7 +6,7 @@
     margin-bottom: 20px;
 }
 
-#main-articles h2 {
+#my-main-articles h2 {
     text-align: center;
     font-size: 1.8rem;
     color: #333;
