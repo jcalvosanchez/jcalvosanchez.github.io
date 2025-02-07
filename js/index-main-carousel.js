@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Autoplay: cambiar automáticamente de diapositiva cada 10 segundos
-    const intervalTime = 4000; // 4 segundos
+    const intervalTime = 5000; // 5 segundos
     let autoPlay = setInterval(() => {
         currentSlide = (currentSlide + 1) % slides.length;
         moveToSlide(currentSlide);
