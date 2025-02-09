@@ -37,6 +37,9 @@ body {
 
 /* Responsividad: en pantallas pequeñas, los elementos se apilan en una sola columna */
 @media (max-width: 768px) {
+body {
+    padding-top: 80px;
+}
     .grid-container {
         grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
     }

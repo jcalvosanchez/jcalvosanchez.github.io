@@ -53,3 +53,19 @@ header {
     color: #007bff;
     transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+header {
+    flex-direction: column;
+}
+#company-logo {
+    width: 45px;
+    height: 45px;
+}
+#company-name {
+    margin: 10px;
+}
+#company-motto {
+    margin: 10px;
+}
+}
