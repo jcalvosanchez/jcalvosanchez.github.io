@@ -1,21 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding-top: 140px;
+    padding-top: 60px;
     background-color: #f4f4f4;
-}
-header {
-    background: linear-gradient(to right, #304c90, #87a9cc);
-    color: white;
-    text-align: center;
-    position: fixed;
-
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
-    z-index: 1000; /* Para que quede por encima del contenido */
-    padding: 10px 20px;
 }
 
 .main-container {
