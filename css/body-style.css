@@ -11,48 +11,25 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
-}
-
-.grid-column {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
-.highlights-list {
 
-}
-.software-projects-list {
-
-}
-
-.grid-column-item {
+.grid-item {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 15px;
+    background-color: #f1f1f1;
 }
 
 /* Responsividad: en pantallas pequeñas, los elementos se apilan en una sola columna */
 @media (max-width: 768px) {
-body {
-    padding-top: 80px;
-}
-    .grid-container {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-    }
-
-    .grid-column {
-        overflow: hidden;
-    }
-
-    .header-container h1 {
-        font-size: 2rem;
-    }
-
-    .header-container p {
-        font-size: 1rem;
+    body {
+        padding-top: 80px;
     }
 }
