@@ -30,6 +30,6 @@ body {
 /* Responsividad: en pantallas pequeñas, los elementos se apilan en una sola columna */
 @media (max-width: 768px) {
     body {
-        padding-top: 80px;
+        padding-top: 100px;
     }
 }

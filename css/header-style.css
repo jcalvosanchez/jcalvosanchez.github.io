@@ -10,10 +10,17 @@ header {
     z-index: 1000;
 }
 
-#company-data {
+#company-header {
     display: flex;
     gap: 20px;
     align-items: center;
+}
+
+#company-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 #company-logo {
@@ -55,17 +62,17 @@ header {
 }
 
 @media (max-width: 768px) {
-header {
-    flex-direction: column;
-}
-#company-logo {
-    width: 45px;
-    height: 45px;
-}
-#company-name {
-    margin: 10px;
-}
-#company-motto {
-    margin: 10px;
-}
+    header {
+        flex-direction: column;
+    }
+    #company-data {
+        flex-direction: column;
+        gap: 0px;
+    }
+    #company-name {
+        margin: 5px;
+    }
+    #company-motto {
+        margin: 5px;
+    }
 }
