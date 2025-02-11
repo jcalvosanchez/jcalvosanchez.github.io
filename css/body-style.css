@@ -26,20 +26,19 @@ h2 {
     grid-template-columns: 1fr;
     gap: 20px;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
 
 .grid-item {
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 15px;
     background-color: #f1f1f1;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsividad: en pantallas pequeñas, los elementos se apilan en una sola columna */
 @media (max-width: 768px) {
     html {
         scroll-padding-top: 110px;

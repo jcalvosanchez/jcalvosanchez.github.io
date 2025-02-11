@@ -79,5 +79,12 @@ button.next {
 */
 
 @media (max-width: 768px) {
-
+    .carousel {
+        max-width: 725px;
+    }
+}
+@media (max-width: 480px) {
+    .carousel {
+        max-width: 375px;
+    }
 }
