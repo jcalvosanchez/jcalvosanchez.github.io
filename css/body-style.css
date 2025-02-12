@@ -47,3 +47,16 @@ h2 {
         padding-top: 100px;
     }
 }
+
+.text-small {
+    display: none;
+}
+
+@media (max-width: 460px) {
+    .text-large {
+        display: none;
+    }
+    .text-small {
+        display: block;
+    }
+}
