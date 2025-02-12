@@ -74,10 +74,10 @@ body {
 @media (max-width: 768px) {
     .section-container {
         padding: 10px;
-        gap: 20px;
+        gap: 10px;
     }
     .section-content-container {
-        max-width: 300px;
+        padding: 5px;
     }
 }
 @media (max-width: 460px) {
