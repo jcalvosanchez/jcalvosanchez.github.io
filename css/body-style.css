@@ -81,9 +81,6 @@ body {
     }
 }
 @media (max-width: 460px) {
-    .section-content-container {
-        max-width: 150px;
-    }
     .text-large {
         display: none;
     }
