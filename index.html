@@ -3,115 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Helmantica TIC</title>
-    <link rel="stylesheet" href="css/body-style.css">
-    <link rel="stylesheet" href="css/header-style.css">
-    <link rel="stylesheet" href="css/index-intro.css">
+    <title>Mi Portafolio de Proyectos</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index-main-carousel.css">
-    <link rel="stylesheet" href="css/index-main-my-past-clients.css">
+    <link rel="stylesheet" href="css/index-main-vip-clients.css">
+    <link rel="stylesheet" href="css/index-main-articles.css">
+    <link rel="stylesheet" href="css/index-main-software-projects.css">
     <script src="js/index-main-carousel.js"></script>
-    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
-<header>
-    <div id="company-header">
-        <img id="company-logo" src="/img/htic-logo-60px.png" alt="Logo Helmantica TIC">
-        <div id="company-data">
-            <h1 id="company-name">Helmantica TIC</h1>
-            <h3 id="company-motto">Software Efectivo y Sencillo</h3>
-        </div>
-    </div>
-    <nav id="header-nav">
-        <ul class="header-nav-menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="articulos.html">Artículos</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-        </ul>
-    </nav>
+<header class="header-background">
+    <h1>Bienvenido a mi Portafolio de Proyectos</h1>
+    <p>Explora mis proyectos de software</p>
 </header>
 
 <main class="main-container">
-    <section id="intro" class="section-container waves-background">
-        <div class="section-content-container">
-            <h1>Helmantica TIC</h1>
-            <h3>Software Efectivo y Sencillo</h3>
-            <p class="text-large">¿Necesitas realizar un desarrollo software?</p>
-            <p class="text-large">¿Necesitas desarrollar un producto software?</p>
-            <p class="text-large">¿Necesitas optimizar tus procesos?</p>
-            <p class="text-small">¿Desarrollo software?</p>
-            <p class="text-small">¿Producto software?</p>
-            <p class="text-small">¿Optimizar procesos?</p>
-            <a href="#contacto" class="cta-button">Hablemos sobre tu proyecto</a>
-        </div>
-        <div class="section-content-container">
-            <div class="carousel">
-                <button class="prev">‹</button>
-                <div class="carousel-track">
-                    <div class="carousel-slide">
-                        <img src="https://pbs.twimg.com/media/Dg1ygwyXUAA8-bA.jpg" alt="Quote image">
+    <div class="grid-container">
+        <div class="grid-column highlights-list">
+            <section id="carousel-container" class="grid-column-item">
+                <div class="carousel">
+                    <button class="prev">‹</button>
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="https://pbs.twimg.com/media/Dg1ygwyXUAA8-bA.jpg" alt="Quote image">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://quotefancy.com/media/wallpaper/3840x2160/17717-Mahatma-Gandhi-Quote-The-difference-between-what-we-do-and-what-we.jpg" alt="Quote image">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://www.brainyquote.com/photos_tr/en/a/abrahammaslow/126079/abrahammaslow1-2x.jpg" alt="Quote image">
+                        </div>
                     </div>
-                    <div class="carousel-slide">
-                        <img src="https://quotefancy.com/media/wallpaper/3840x2160/17717-Mahatma-Gandhi-Quote-The-difference-between-what-we-do-and-what-we.jpg" alt="Quote image">
+                    <button class="next">›</button>
+                </div>
+            </section>
+            <section id="vip-clients" class="grid-column-item">
+                <h2>Principales Clientes</h2>
+                <div class="vip-client-logos">
+                    <!-- Maersk (Denmark) -->
+                    <div class="vip-client">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnTE9pXIZTssvs4gumVCBdiec2OWRwuTLnIg&s"
+                             alt="Logo Maersk Line"
+                             class="vip-client-logo">
+                        <img src="https://flagcdn.com/w40/dk.png"
+                             alt="Denmark Flag"
+                             class="vip-client-flag">
                     </div>
-                    <div class="carousel-slide">
-                        <img src="https://www.brainyquote.com/photos_tr/en/a/abrahammaslow/126079/abrahammaslow1-2x.jpg" alt="Quote image">
+
+                    <!-- Bayer (Belgium) -->
+                    <div class="vip-client">
+                        <img src="https://biovegen.org/wp-content/uploads/2020/04/Logo_BayerCropScience.png"
+                             alt="Logo Bayer Crop Science"
+                             class="vip-client-logo">
+                        <img src="https://flagcdn.com/w40/be.png"
+                             alt="Belgium Flag"
+                             class="vip-client-flag">
                     </div>
-                    <!--                        <div class="carousel-slide">-->
-                    <!--                            <div class="quote-text">-->
-                    <!--                                <p>"La perfección se logra, no cuando no hay nada más que añadir, sino cuando no hay nada más que eliminar."</p>-->
-                    <!--                                <p class="author">Antoine de Saint-Exupéry</p>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                </div>
-                <button class="next">›</button>
-            </div>
-        </div>
-    </section>
-    <section id="my-past-clients" class="section-container">
-        <div class="section-content-container">
-            <div class="vip-client-logos">
-                <div class="vip-client" aria-label="Client: Maersk - Denmark">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnTE9pXIZTssvs4gumVCBdiec2OWRwuTLnIg&s"
-                         alt="Logo Maersk Line"
-                         class="vip-client-logo">
-                    <img src="https://flagcdn.com/w40/dk.png"
-                         alt="Denmark Flag"
-                         class="vip-client-flag">
-                </div>
 
-                <div class="vip-client">
-                    <img src="https://biovegen.org/wp-content/uploads/2020/04/Logo_BayerCropScience.png"
-                         alt="Logo Bayer Crop Science"
-                         class="vip-client-logo">
-                    <img src="https://flagcdn.com/w40/be.png"
-                         alt="Belgium Flag"
-                         class="vip-client-flag">
-                </div>
+                    <!-- DG Competition (EU) -->
+                    <div class="vip-client">
+                        <img src="https://www.industry4europe.eu/assets/Uploads/DG-COMP__ScaleMaxWidthWzYwMF0.jpg"
+                             alt="Logo DG Competition"
+                             class="vip-client-logo">
+                        <img src="https://flagcdn.com/w40/eu.png"
+                             alt="EU Flag"
+                             class="vip-client-flag">
+                    </div>
 
-                <div class="vip-client">
-                    <img src="https://www.industry4europe.eu/assets/Uploads/DG-COMP__ScaleMaxWidthWzYwMF0.jpg"
-                         alt="Logo DG Competition"
-                         class="vip-client-logo">
-                    <img src="https://flagcdn.com/w40/eu.png"
-                         alt="EU Flag"
-                         class="vip-client-flag">
+                    <!-- BNE (Spain) -->
+                    <div class="vip-client">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlEye_8WLd5wfGFGcvnpkpmy16x1doWftBGQ&s"
+                             alt="Logo BNE"
+                             class="vip-client-logo">
+                        <img src="https://flagcdn.com/w40/es.png"
+                             alt="Spain Flag"
+                             class="vip-client-flag">
+                    </div>
                 </div>
+            </section>
 
-                <div class="vip-client">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlEye_8WLd5wfGFGcvnpkpmy16x1doWftBGQ&s"
-                         alt="Logo BNE"
-                         class="vip-client-logo">
-                    <img src="https://flagcdn.com/w40/es.png"
-                         alt="Spain Flag"
-                         class="vip-client-flag">
+            <section id="main-articles" class="grid-column-item">
+                <h2>Artículos más destacados</h2>
+                <div class="articles-list">
+                    <div class="article-card">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D12AQE0wvrdYpj56Q/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1711195379082?e=1740614400&v=beta&t=BHHpfHoFWpfbOPH05kc-fgz0cxfwmQ7yq55LbWswyJM" alt="Test-Driven Development" class="article-image">
+                        <h3><a href="https://www.linkedin.com/pulse/test-driven-development-tdd-effective-planning-jer%2525C3%2525B3nimo-calvo-s%2525C3%2525A1nchez-kqvjf" target="_blank">Test-Driven Development (TDD) for Effective Planning</a></h3>
+                    </div>
+                    <div class="article-card">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D12AQFE1Fe1Hz7C-Q/article-cover_image-shrink_423_752/article-cover_image-shrink_423_752/0/1728039036707?e=1740614400&v=beta&t=dK9mCaVA0F9X9q7NjA02IUwgdDx4C9QOJUqHBz68QxE" alt="Menos es Más" class="article-image">
+                        <h3><a href="https://www.linkedin.com/pulse/menos-es-m%2525C3%2525A1s-aumentar-la-productividad-del-sistema-calvo-s%2525C3%2525A1nchez-kehve" target="_blank">Menos es Más. Aumentar la productividad del sistema reduciendo</a></h3>
+                    </div>
+                    <div class="article-card">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D12AQHnEfhUG9j80w/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1709544474351?e=1740614400&v=beta&t=NGJouI454Y2MuLFTtWphqZtv-TyucAzt2TjTmzhUEek" alt="The Power of Prioritization: Mitigating the Highest Risk in Software Development" class="article-image">
+                        <h3><a href="https://www.linkedin.com/pulse/power-prioritization-mitigating-highest-risk-software-calvo-s%2525C3%2525A1nchez-fqacf" target="_blank">The Power of Prioritization: Mitigating the Highest Risk in Software Development</a></h3>
+                    </div>
+                    <div class="article-card">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E12AQGeLjTIROn1cA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1709715602142?e=1740614400&v=beta&t=fbWnR-7_0h47KLV4_93shqshruHO87oCi6jlPSMrC_o" alt="Quick and Easy Introduction to Test-Driven Development (TDD)" class="article-image">
+                        <h3><a href="https://www.linkedin.com/pulse/quick-easy-introduction-test-driven-development-tdd-calvo-s%2525C3%2525A1nchez-zoyje" target="_blank">Quick and Easy Introduction to Test-Driven Development (TDD)</a></h3>
+                    </div>
+                    <div class="article-card">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D12AQF_ZEHv8YkOXA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1689598499022?e=1740614400&v=beta&t=1uQqTps-_dHRSMRWYYhyGU2C4mHmILZUl83_9apUE0c" alt="Introduction to Agile" class="article-image">
+                        <h3><a href="https://www.linkedin.com/pulse/introduction-agile-jer%2525C3%2525B3nimo-calvo-s%2525C3%2525A1nchez" target="_blank">Introduction to Agile</a></h3>
+                    </div>
+                    <div class="article-card">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D12AQHgFf7nsMLiQQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1690882524551?e=1740614400&v=beta&t=PJNBggrBTWJ7NyMF45xFehN7qMxw3KHng4AQSr20pAc" alt="My Agile Manifesto v1.1" class="article-image">
+                        <h3><a href="https://www.linkedin.com/pulse/my-agile-manifesto-v11-jer%2525C3%2525B3nimo-calvo-s%2525C3%2525A1nchez-5wlmf" target="_blank">My Agile Manifesto v1.1</a></h3>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
-        <div class="section-content-container">
-            <h2>Clientes que confiaron en Nosotros</h2>
+        <div class="grid-column software-projects-list">
+            <section id="section-projects" class="grid-column-item">
+                <h2 class="section-title">Proyectos Públicos</h2>
+                <div class="projects">
+                    <div class="my-software-project">
+                        <h3><a href="https://github.com/jcalvosanchez/surecat" target="_blank">Surecat</a></h3>
+                        <div class="badges">
+                            <img src="https://img.shields.io/badge/date-2016-orange" alt="Badge Date">
+                            <img src="https://img.shields.io/badge/java-23-blue" alt="Badge Java">
+                            <img src="https://img.shields.io/badge/junit-4-blue" alt="Badge JUnit">
+                            <img src="https://img.shields.io/badge/poi-3-blue" alt="Badge POI">
+                        </div>
+                        <p>Carga escenarios de tests desde Excel a Java</p>
+                    </div>
+                </div>
+            </section>
+            <section id="section-katas" class="grid-column-item">
+                <h2 class="section-title">Katas</h2>
+                <div class="katas">
+                    <div class="my-software-project">
+                        <h3><a href="https://github.com/jcalvosanchez/java-functional-programming" target="_blank">Functional Programming</a></h3>
+                        <div class="badges">
+                            <img src="https://img.shields.io/badge/date-2024-orange" alt="Badge Date">
+                            <img src="https://img.shields.io/badge/java-8-blue" alt="Badge Java">
+                            <img src="https://img.shields.io/badge/junit-5-blue" alt="Badge JUnit">
+                        </div>
+                        <p>A collection of articles and code examples about Functional Programming.</p>
+                    </div>
+                    <div class="my-software-project">
+                        <h3><a href="https://github.com/jcalvosanchez/katas/tree/kata-duquesGame-java8" target="_blank">Duque's Game</a></h3>
+                        <div class="badges">
+                            <img src="https://img.shields.io/badge/date-2024-orange" alt="Badge Date">
+                            <img src="https://img.shields.io/badge/java-8-blue" alt="Badge Java">
+                            <img src="https://img.shields.io/badge/junit-5-blue" alt="Badge JUnit">
+                        </div>
+                        <p>1 player guessing game for a number that must have 4 unique digits.</p>
+                    </div>
+                    <div class="my-software-project">
+                        <h3><a href="https://github.com/jcalvosanchez/romannumbers" target="_blank">Roman Numbers</a></h3>
+                        <div class="badges">
+                            <img src="https://img.shields.io/badge/date-2024-orange" alt="Badge Date">
+                            <img src="https://img.shields.io/badge/java-23-blue" alt="Badge Java">
+                            <img src="https://img.shields.io/badge/junit-5-blue" alt="Badge JUnit">
+                        </div>
+                        <div class="badges">
+                            <img src="https://img.shields.io/badge/date-2016-orange" alt="Badge Date">
+                            <img src="https://img.shields.io/badge/java-8-blue" alt="Badge Java">
+                            <img src="https://img.shields.io/badge/spring-2.5-blue" alt="Badge JUnit">
+                        </div>
+                        <p>Roman numbers to Natural numbers and viceversa</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-subjects" class="grid-column-item">
+                <h2 class="section-title">Proyectos de Asignaturas</h2>
+                <div class="my-software-project">
+                    <h3>PMDM - Programación Multimedia y Dispositivos Móviles</h3>
+                    <div class="badges">
+                        <img src="https://img.shields.io/badge/date-2024-orange" alt="Badge Date">
+                        <img src="https://img.shields.io/badge/java-23-blue" alt="Badge Java">
+                        <img src="https://img.shields.io/badge/android-24-blue" alt="Badge Android">
+                    </div>
+                    <ul>
+                        <li>Teclado Numérico</li>
+                        <li>Intent básico</li>
+                    </ul>
+                </div>
+                <div class="my-software-project">
+                    <h3>PSYP - Programación de Servicios y Procesos</h3>
+                    <div class="badges">
+                        <img src="https://img.shields.io/badge/date-2024-orange" alt="Badge Date">
+                        <img src="https://img.shields.io/badge/java-23-blue" alt="Badge Java">
+                    </div>
+                    <ul>
+                        <li><a href="https://github.com/jcalvosanchez/subjects/tree/main/psyp#ciclo-de-vida-de-un-proceso" target="_blank">Multi-Proceso - Ciclo de Vida Proceso</a></li>
+                        <li><a href="https://github.com/jcalvosanchez/subjects/tree/main/psyp#nuevo-proceso-java" target="_blank">Multi-Proceso - Nuevo Proceso Java</a></li>
+                        <li>Alimentar Animales</li>
+                        <li>Semáforo</li>
+                        <li><a href="https://github.com/jcalvosanchez/subjects/tree/main/psyp#hello-world-server-and-client" target="_blank">Programación Distribuida - Hello World Server Client</a></li>
+                    </ul>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
 </main>
 
 </body>
