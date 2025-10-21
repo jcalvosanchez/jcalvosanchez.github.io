@@ -4,7 +4,6 @@ function marcarEnlaceActivoCabecera() {
 
   navLinks.forEach(link => {
     const href = link.getAttribute('href');
-    console.log()
     if (href === currentPage) {
       link.classList.add('active');
     }

@@ -11,12 +11,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 150px;
+    width: 100px;
+    min-width: 100px;
 }
 
 .vip-client-logo {
     width: 100%;
     height: 150px;
+    min-height: 150px;
     object-fit: contain;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -29,13 +31,16 @@
 
 @media (max-width: 768px) {
     .client-list {
+        flex-wrap: wrap;
         gap: 1rem;
         padding: 0.5rem;
     }
     .vip-client {
         width: 50px;
+        min-width: 50px;
     }
     .vip-client-logo {
         height: 50px;
+        min-height: 50px;
     }
 }
