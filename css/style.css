@@ -12,7 +12,7 @@ body {
     background-color: var(--bg-primary);
 }
 
-header {
+header, footer {
     color: var(--header-txt-primary);
     text-align: center;
     background: linear-gradient(135deg, #0a2e57 10%, #004e92 50%, #00a2ff 90%);
@@ -26,12 +26,15 @@ header {
     100% { background-position: 0% 50%; }
 }
 
-.site-header {
+.site-header, .site-footer {
     display: flex;
     align-items: center;
     height: 64px;
     padding: 0 1.5rem;
 }
+ .site-footer {
+    justify-content: space-between;
+ }
 .brand { font-weight: bold; font-size:1.25rem; }
 .brand-name {
     font-size: 1.25rem;
@@ -84,7 +87,8 @@ nav a { font-weight:500; color: var(--header-txt-primary); }
 .nav-link.active::after {
     width: 100%;
 }
-
+.social-icons { width: 100%; }
+.social-icons a { margin:0 .5rem; font-size:1.2rem; }
 
 .main-container {
     margin: 20px;
