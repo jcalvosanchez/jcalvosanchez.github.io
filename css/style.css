@@ -1,26 +1,91 @@
+:root {
+    --bg-primary:   #f4f4f4;
+    /* Texto */
+    --header-txt-primary:  #e0e0e0;   /* gris claro */
+    --header-txt-accent:   #ffd700;   /* amarillo láser */
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', system-ui, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--bg-primary);
 }
+
 header {
-    color: white;
+    color: var(--header-txt-primary);
     text-align: center;
-    padding: 1rem;
-}
-.header-background {
     background: linear-gradient(135deg, #0a2e57 10%, #004e92 50%, #00a2ff 90%);
     background-size: 300% 300%;
     animation: gradientAnimation 8s ease-in-out infinite;
 }
-
 /* Animación del degradado */
 @keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
+.site-header {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding: 0 1.5rem;
+}
+.brand { font-weight: bold; font-size:1.25rem; }
+.brand-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--header-txt-accent);
+}
+
+.main-nav {
+    /* centrado automático gracias al flex del header */
+}
+nav a { font-weight:500; color: var(--header-txt-primary); }
+
+.nav-list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.nav-item {}
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: var(--header-txt-primary);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.25rem 0;
+    transition: color .15s ease, transform .15s ease;
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--header-txt-accent);
+    transform: translateY(-2px);
+}
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: var(--header-txt-accent);
+    transition: width .2s ease;
+}
+.nav-link:hover::after,
+.nav-link:focus::after {
+    width: 100%;
+}
+.nav-link.active {
+    color: var(--header-txt-accent);
+}
+.nav-link.active::after {
+    width: 100%;
+}
+
+
 .main-container {
     margin: 20px;
 }
