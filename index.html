@@ -6,7 +6,7 @@
     <title>Mi Portafolio de Proyectos Software</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index-main-carousel.css">
-    <link rel="stylesheet" href="css/index-main-vip-clients.css">
+    <link rel="stylesheet" href="css/index-main-my-vip-clients.css">
     <link rel="stylesheet" href="css/index-main-articles.css">
     <link rel="stylesheet" href="css/index-main-software-projects.css">
     <script src="js/index-header.js"></script>
@@ -30,8 +30,8 @@
 
 <main class="main-container">
     <div class="grid-container">
-        <div class="grid-column highlights-list">
-            <section id="carousel-container" class="grid-column-item">
+        <div id="highlights-list" class="grid-column">
+            <section id="section-my-principles" class="grid-column-item">
                 <div class="carousel">
                     <button class="prev">‹</button>
                     <div class="carousel-track">
@@ -59,52 +59,53 @@
                     <button class="next">›</button>
                 </div>
             </section>
-            <section id="vip-clients" class="grid-column-item">
-                <h2>Principales Clientes</h2>
-                <div class="vip-client-logos">
-                    <!-- Maersk (Denmark) -->
+            <section id="section-my-vip-clients" class="grid-column-item" aria-label="Mis principales clientes">
+                <h2 class="section-title">Mis Principales Clientes</h2>
+                <div class="client-list">
                     <div class="vip-client">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnTE9pXIZTssvs4gumVCBdiec2OWRwuTLnIg&s"
-                             alt="Logo Maersk Line"
-                             class="vip-client-logo">
+                             alt="Maersk Line - Dinamarca"
+                             class="vip-client-logo"
+                             loading="lazy">
                         <img src="https://flagcdn.com/w40/dk.png"
                              alt="Denmark Flag"
-                             class="vip-client-flag">
+                             class="vip-client-flag"
+                             loading="lazy">
                     </div>
-
-                    <!-- Bayer (Belgium) -->
                     <div class="vip-client">
                         <img src="https://biovegen.org/wp-content/uploads/2020/04/Logo_BayerCropScience.png"
-                             alt="Logo Bayer Crop Science"
-                             class="vip-client-logo">
+                             alt="Bayer Crop Science - Bélgica"
+                             class="vip-client-logo"
+                             loading="lazy">
                         <img src="https://flagcdn.com/w40/be.png"
                              alt="Belgium Flag"
-                             class="vip-client-flag">
+                             class="vip-client-flag"
+                             loading="lazy">
                     </div>
-
-                    <!-- DG Competition (EU) -->
                     <div class="vip-client">
                         <img src="https://www.industry4europe.eu/assets/Uploads/DG-COMP__ScaleMaxWidthWzYwMF0.jpg"
-                             alt="Logo DG Competition"
-                             class="vip-client-logo">
+                             alt="DG Competition - Unión Europea"
+                             class="vip-client-logo"
+                             loading="lazy">
                         <img src="https://flagcdn.com/w40/eu.png"
                              alt="EU Flag"
-                             class="vip-client-flag">
+                             class="vip-client-flag"
+                             loading="lazy">
                     </div>
-
-                    <!-- BNE (Spain) -->
                     <div class="vip-client">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlEye_8WLd5wfGFGcvnpkpmy16x1doWftBGQ&s"
-                             alt="Logo BNE"
-                             class="vip-client-logo">
+                             alt="BNE - España"
+                             class="vip-client-logo"
+                             loading="lazy">
                         <img src="https://flagcdn.com/w40/es.png"
                              alt="Spain Flag"
-                             class="vip-client-flag">
+                             class="vip-client-flag"
+                             loading="lazy">
                     </div>
                 </div>
             </section>
             <section id="main-articles" class="grid-column-item">
-                <h2>Artículos más destacados</h2>
+                <h2 class="section-title">Artículos más destacados</h2>
                 <div class="articles-list">
                     <div class="article-card">
                         <img src="https://media.licdn.com/dms/image/v2/D4D12AQE0wvrdYpj56Q/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1711195379082?e=1740614400&v=beta&t=BHHpfHoFWpfbOPH05kc-fgz0cxfwmQ7yq55LbWswyJM" alt="Test-Driven Development" class="article-image">
@@ -133,7 +134,7 @@
                 </div>
             </section>
         </div>
-        <div class="grid-column software-projects-list">
+        <div id="software-projects-list" class="grid-column">
             <section id="section-projects" class="grid-column-item">
                 <h2 class="section-title">Proyectos Públicos</h2>
                 <div class="projects">

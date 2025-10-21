@@ -102,18 +102,20 @@ nav a { font-weight:500; color: var(--header-txt-primary); }
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
-.highlights-list {
-
-}
-.software-projects-list {
-
-}
 
 .grid-column-item {
+    padding: 2rem 1rem;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 15px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
 }
 
 /* Responsividad: en pantallas pequeñas, los elementos se apilan en una sola columna */

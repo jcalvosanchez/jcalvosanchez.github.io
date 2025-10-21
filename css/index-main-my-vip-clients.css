@@ -1,0 +1,41 @@
+.client-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    /*overflow-x: auto;*/
+}
+
+.vip-client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.vip-client-logo {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vip-client-flag {
+    width: 100%;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .client-list {
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+    .vip-client {
+        width: 50px;
+    }
+    .vip-client-logo {
+        height: 50px;
+    }
+}
