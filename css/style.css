@@ -96,10 +96,13 @@ nav a { font-weight:500; color: var(--header-txt-primary); }
     margin: 20px;
 }
 
+#index-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 1rem;
 }
 
 .grid-column {
