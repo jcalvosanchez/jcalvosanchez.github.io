@@ -29,13 +29,15 @@ header, footer {
 .site-header, .site-footer {
     display: flex;
     align-items: center;
-    height: 64px;
-    padding: 0 1.5rem;
+    padding: 0.5rem 1.5rem;
 }
- .site-footer {
+.site-header {
+    border-bottom: 5px solid var(--header-txt-accent);
+}
+.site-footer {
     justify-content: space-between;
- }
-.brand { font-weight: bold; font-size:1.25rem; }
+    border-top: 5px solid var(--header-txt-accent);
+}
 .brand-name {
     font-size: 1.25rem;
     font-weight: 600;
@@ -123,6 +125,16 @@ nav a { font-weight:500; color: var(--header-txt-primary); }
 }
 
 /* Responsividad: en pantallas pequeñas, los elementos se apilan en una sola columna */
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+    }
+    .brand-name {
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+}
+
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
