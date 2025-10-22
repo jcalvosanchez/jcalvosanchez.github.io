@@ -1,0 +1,56 @@
+[
+  {
+    "id": "devexp",
+    "title": "Developer Experience",
+    "url": "https://www.linkedin.com/pulse/developer-experience-jer%C3%B3nimo-calvo-s%C3%A1nchez-sk6pc",
+    "image": "./img/article-cover-devexp.jpg",
+    "date": "2023-09-15",
+    "tags": ["SoftwareDevelopment", "Productivity"],
+    "series": null
+  },
+  {
+    "id": "java-stream",
+    "title": "Getting started with Java Stream API",
+    "url": "https://www.linkedin.com/pulse/getting-started-java-stream-api-jer%C3%B3nimo-calvo-s%C3%A1nchez-vavxf",
+    "image": "./img/article-cover-java-stream-api.png",
+    "date": "2023-07-02",
+    "tags": ["SoftwareDevelopment", "Java", "FunctionalProgramming", "StreamAPI"],
+    "series": "Programación Funcional en Java"
+  },
+  {
+    "id": "agile-manifesto-v1-1",
+    "title": "My Agile Manifesto v1.1",
+    "url": "https://www.linkedin.com/pulse/my-agile-manifesto-v11-jer%C3%B3nimo-calvo-s%C3%A1nchez-5wlmf",
+    "image": "./img/article-cover-my-agile-manifesto-v1-1.jpg",
+    "date": "2023-05-12",
+    "tags": ["Agile", "Mindset"],
+    "series": null
+  },
+  {
+    "id": "tdd-effective-planning",
+    "title": "Test-Driven Development (TDD) for Effective Planning",
+    "url": "https://www.linkedin.com/pulse/test-driven-development-tdd-effective-planning-jer%C3%B3nimo-calvo-s%C3%A1nchez-kqvjf",
+    "image": "./img/article-cover-tdd-for-effective-planning.jpg",
+    "date": "2023-04-03",
+    "tags": ["TDD", "Planning", "SoftwareDevelopment"],
+    "series": null
+  },
+  {
+    "id": "menos-es-mas",
+    "title": "Menos es Más. Aumentar la productividad del sistema reduciendo",
+    "url": "https://www.linkedin.com/pulse/menos-es-m%C3%A1s-aumentar-la-productividad-del-sistema-calvo-s%C3%A1nchez-kehve",
+    "image": "./img/article-cover-menos-es-mas.jpg",
+    "date": "2023-02-14",
+    "tags": ["Productividad", "Simplicidad", "Sistemas"],
+    "series": null
+  },
+  {
+    "id": "prioritization-highest-risk",
+    "title": "The Power of Prioritization: Mitigating the Highest Risk in Software Development",
+    "url": "https://www.linkedin.com/pulse/power-prioritization-mitigating-highest-risk-software-calvo-s%C3%A1nchez-fqacf",
+    "image": "./img/article-cover-prioritization-mitigating-highest-risk.jpg",
+    "date": "2023-01-20",
+    "tags": ["Prioritization", "RiskManagement", "SoftwareDevelopment"],
+    "series": null
+  }
+]

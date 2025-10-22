@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Artículos</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index-main-articles.css">
-    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Artículos</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/articles.css">
+<!--  <link rel="stylesheet" href="css/publications.css">-->
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+<!--  <script src="js/article-explorer.js"></script>-->
+  <script src="js/articles-list-renderer.js"></script>
 </head>
 
 <body>
@@ -25,34 +28,49 @@
 <main class="main-container">
   <div class="grid-container">
     <div id="highlights-list" class="grid-column">
-      <section id="main-articles" class="grid-column-item" aria-label="Mis artículos más destadados">
+      <section id="article-section" class="grid-column-item" aria-label="Listado de mis artículos">
         <h2 class="section-title">Artículos más destacados</h2>
-        <div class="article-list">
-          <div class="article-card">
-            <img src="./img/article-cover-devexp.jpg" alt="Developer Experience" class="article-image">
-            <h3><a href="https://www.linkedin.com/pulse/developer-experience-jer%C3%B3nimo-calvo-s%C3%A1nchez-sk6pc" target="_blank">Developer Experience</a></h3>
-          </div>
-          <div class="article-card">
-            <img src="./img/article-cover-java-stream-api.png" alt="Getting started with Java Stream API" class="article-image">
-            <h3><a href="https://www.linkedin.com/pulse/getting-started-java-stream-api-jer%C3%B3nimo-calvo-s%C3%A1nchez-vavxf" target="_blank">Getting started with Java Stream API</a></h3>
-          </div>
-          <div class="article-card">
-            <img src="img/article-cover-my-agile-manifesto-v1-1.jpg" alt="My Agile Manifesto v1.1" class="article-image">
-            <h3><a href="https://www.linkedin.com/pulse/my-agile-manifesto-v11-jer%2525C3%2525B3nimo-calvo-s%2525C3%2525A1nchez-5wlmf" target="_blank">My Agile Manifesto v1.1</a></h3>
-          </div>
-          <div class="article-card">
-            <img src="./img/article-cover-tdd-for-effective-planning.jpg" alt="Test-Driven Development" class="article-image">
-            <h3><a href="https://www.linkedin.com/pulse/test-driven-development-tdd-effective-planning-jer%2525C3%2525B3nimo-calvo-s%2525C3%2525A1nchez-kqvjf" target="_blank">Test-Driven Development (TDD) for Effective Planning</a></h3>
-          </div>
-          <div class="article-card">
-            <img src="./img/article-cover-menos-es-mas.jpg" alt="Menos es Más" class="article-image">
-            <h3><a href="https://www.linkedin.com/pulse/menos-es-m%2525C3%2525A1s-aumentar-la-productividad-del-sistema-calvo-s%2525C3%2525A1nchez-kehve" target="_blank">Menos es Más. Aumentar la productividad del sistema reduciendo</a></h3>
-          </div>
-          <div class="article-card">
-            <img src="img/article-cover-prioritization-mitigating-highest-risk.jpg" alt="The Power of Prioritization: Mitigating the Highest Risk in Software Development" class="article-image">
-            <h3><a href="https://www.linkedin.com/pulse/power-prioritization-mitigating-highest-risk-software-calvo-s%2525C3%2525A1nchez-fqacf" target="_blank">The Power of Prioritization: Mitigating the Highest Risk in Software Development</a></h3>
-          </div>
-        </div>
+<!--        <details class="articles-filter-panel" open>-->
+<!--          <summary class="filter-summary" aria-controls="filter-controls" aria-expanded="true">-->
+<!--            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">-->
+<!--              <path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="2"/>-->
+<!--            </svg>-->
+<!--            <span>Filtrar y ordenar</span>-->
+<!--          </summary>-->
+<!--          <div id="filter-controls" class="filter-controls">-->
+<!--            &lt;!&ndash; TAGS (checkboxes) &ndash;&gt;-->
+<!--            <fieldset class="filter-group">-->
+<!--              <legend class="filter-legend">Temas</legend>-->
+<!--              <div class="filter-options" id="tag-filters">-->
+<!--                &lt;!&ndash; JS will inject a checkbox per tag &ndash;&gt;-->
+<!--              </div>-->
+<!--            </fieldset>-->
+
+<!--            &lt;!&ndash; SERIES (select) &ndash;&gt;-->
+<!--            <fieldset class="filter-group">-->
+<!--              <legend class="filter-legend">Serie</legend>-->
+<!--              <select id="series-filter" class="filter-select">-->
+<!--                <option value="">Todas</option>-->
+<!--                &lt;!&ndash; JS will inject options &ndash;&gt;-->
+<!--              </select>-->
+<!--            </fieldset>-->
+
+<!--            &lt;!&ndash; ORDER (select) &ndash;&gt;-->
+<!--            <fieldset class="filter-group">-->
+<!--              <legend class="filter-legend">Ordenar por</legend>-->
+<!--              <select id="order-filter" class="filter-select">-->
+<!--                <option value="dateDesc">Más reciente</option>-->
+<!--                <option value="dateAsc">Más antiguo</option>-->
+<!--                <option value="titleAsc">Título (A‑Z)</option>-->
+<!--                <option value="titleDesc">Título (Z‑A)</option>-->
+<!--              </select>-->
+<!--            </fieldset>-->
+
+<!--            <button id="clear-filters" class="btn-clear">Limpiar filtros</button>-->
+<!--          </div>-->
+<!--        </details>-->
+<!--        <p id="result-info" class="result-info" aria-live="polite"></p>-->
+        <div class="article-list"></div>
       </section>
     </div>
   </div>
@@ -64,5 +82,6 @@
     <a class="nav-link" href="https://linkedin.com/in/jeronimocalvosanchez" target="_blank">LinkedIn</a>
   </div>
 </footer>
+
 </body>
 </html>
