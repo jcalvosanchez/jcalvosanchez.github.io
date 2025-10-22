@@ -133,12 +133,17 @@ nav a { font-weight:500; color: var(--header-txt-primary); }
         flex-direction: column;
     }
     .brand-name {
-        margin-bottom: 0.5rem;
         text-align: center;
+    }
+    .nav-list {
+        margin-top: 0.5rem;
     }
 }
 
 @media (max-width: 768px) {
+    #index-container{
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
     .grid-container {
         grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
     }
