@@ -5,6 +5,7 @@
 }
 
 .article-card {
+    max-width: 260px;
     padding: 1rem;
     text-align: center;
     border-radius: 10px;

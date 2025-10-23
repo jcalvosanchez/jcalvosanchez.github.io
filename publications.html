@@ -7,9 +7,8 @@
   <title>Mis Artículos</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/articles.css">
-<!--  <link rel="stylesheet" href="css/publications.css">-->
+  <link rel="stylesheet" href="css/publications.css">
   <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-<!--  <script src="js/article-explorer.js"></script>-->
   <script src="js/articles-list-renderer.js"></script>
 </head>
 
@@ -30,23 +29,23 @@
     <div id="highlights-list" class="grid-column">
       <section id="article-section" class="grid-column-item" aria-label="Listado de mis artículos">
         <h2 class="section-title">Mis Artículos</h2>
-<!--        <details class="articles-filter-panel" open>-->
-<!--          <summary class="filter-summary" aria-controls="filter-controls" aria-expanded="true">-->
-<!--            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">-->
-<!--              <path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="2"/>-->
-<!--            </svg>-->
-<!--            <span>Filtrar y ordenar</span>-->
-<!--          </summary>-->
-<!--          <div id="filter-controls" class="filter-controls">-->
-<!--            &lt;!&ndash; TAGS (checkboxes) &ndash;&gt;-->
-<!--            <fieldset class="filter-group">-->
-<!--              <legend class="filter-legend">Temas</legend>-->
-<!--              <div class="filter-options" id="tag-filters">-->
-<!--                &lt;!&ndash; JS will inject a checkbox per tag &ndash;&gt;-->
-<!--              </div>-->
-<!--            </fieldset>-->
+        <details class="articles-filter-panel">
+          <summary class="filter-summary" aria-controls="filter-controls" aria-expanded="true">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
+              <path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <span>Filtrar y ordenar</span>
+          </summary>
+          <div id="filter-controls" class="filter-controls">
+            <fieldset class="filter-group">
+              <legend class="filter-legend">Temas</legend>
+              <div class="filter-options" id="tag-filters">
+                <select id="tag-filter" class="filter-select">
+                  <option value="all">Todas</option>
+                </select>
+              </div>
+            </fieldset>
 
-<!--            &lt;!&ndash; SERIES (select) &ndash;&gt;-->
 <!--            <fieldset class="filter-group">-->
 <!--              <legend class="filter-legend">Serie</legend>-->
 <!--              <select id="series-filter" class="filter-select">-->
@@ -55,21 +54,22 @@
 <!--              </select>-->
 <!--            </fieldset>-->
 
-<!--            &lt;!&ndash; ORDER (select) &ndash;&gt;-->
-<!--            <fieldset class="filter-group">-->
-<!--              <legend class="filter-legend">Ordenar por</legend>-->
-<!--              <select id="order-filter" class="filter-select">-->
-<!--                <option value="dateDesc">Más reciente</option>-->
-<!--                <option value="dateAsc">Más antiguo</option>-->
-<!--                <option value="titleAsc">Título (A‑Z)</option>-->
-<!--                <option value="titleDesc">Título (Z‑A)</option>-->
-<!--              </select>-->
-<!--            </fieldset>-->
-
-<!--            <button id="clear-filters" class="btn-clear">Limpiar filtros</button>-->
-<!--          </div>-->
-<!--        </details>-->
-<!--        <p id="result-info" class="result-info" aria-live="polite"></p>-->
+            <!-- ORDER (select) -->
+            <fieldset class="filter-group">
+              <legend class="filter-legend">Ordenar por</legend>
+              <select id="order-filter" class="filter-select">
+                <option value="date-desc">Más reciente</option>
+                <option value="date-asc">Más antiguo</option>
+                <option value="title-asc">Título (A‑Z)</option>
+                <option value="title-desc">Título (Z‑A)</option>
+              </select>
+            </fieldset>
+          </div>
+          <div id="filter-buttons" class="filter-controls">
+            <button id="clear-filters" class="btn-clear">Limpiar filtros</button>
+          </div>
+        </details>
+        <p id="result-info" class="result-info" aria-live="polite"></p>
         <div class="article-list"></div>
       </section>
     </div>
