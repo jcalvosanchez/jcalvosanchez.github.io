@@ -4,52 +4,103 @@
     "title": "Developer Experience",
     "url": "https://www.linkedin.com/pulse/developer-experience-jer%C3%B3nimo-calvo-s%C3%A1nchez-sk6pc",
     "image": "./img/article-cover-devexp.jpg",
-    "date": "2023-09-15",
+    "date": "2025-10-06",
     "tags": ["SoftwareDevelopment", "Productivity"],
     "series": null
-  },
-  {
+  }, {
     "id": "java-stream",
     "title": "Getting started with Java Stream API",
     "url": "https://www.linkedin.com/pulse/getting-started-java-stream-api-jer%C3%B3nimo-calvo-s%C3%A1nchez-vavxf",
     "image": "./img/article-cover-java-stream-api.png",
-    "date": "2023-07-02",
+    "date": "2025-03-17",
     "tags": ["SoftwareDevelopment", "Java", "FunctionalProgramming", "StreamAPI"],
     "series": "Programación Funcional en Java"
-  },
-  {
+  }, {
+    "id": "java-optional",
+    "title": "Mastering `Optional` in Java: Eliminate Nulls Enhancing Code Readability",
+    "url": "https://www.linkedin.com/pulse/mastering-optional-java-eliminate-nulls-enhancing-calvo-s%C3%A1nchez-lep8f",
+    "image": "./img/article-cover-java-fp-optional.png",
+    "date": "2025-01-16",
+    "tags": ["SoftwareDevelopment", "Java", "FunctionalProgramming", "Optional"],
+    "series": "Programación Funcional en Java"
+  }, {
+    "id": "java-functional-interfaces",
+    "title": "Functional Interfaces in Java",
+    "url": "https://www.linkedin.com/pulse/functional-interfaces-java-jer%C3%B3nimo-calvo-s%C3%A1nchez-54aef",
+    "image": "./img/article-cover-java-fp-functional-interfaces.jpg",
+    "date": "2025-01-13",
+    "tags": ["SoftwareDevelopment", "Java", "FunctionalProgramming", "FunctionalInterfaces"],
+    "series": "Programación Funcional en Java"
+  }, {
+    "id": "java-lambda-expressions",
+    "title": "Lambda Expressions in Java",
+    "url": "https://www.linkedin.com/pulse/lambda-expressions-java-jer%C3%B3nimo-calvo-s%C3%A1nchez-zxyif",
+    "image": "./img/article-cover-java-fp-lambda-expressions.png",
+    "date": "2025-01-09",
+    "tags": ["SoftwareDevelopment", "Java", "FunctionalProgramming", "LambdaExpressions"],
+    "series": "Programación Funcional en Java"
+  }, {
+    "id": "java-functions-first-class",
+    "title": "Functions as First-class citizens in Java",
+    "url": "https://www.linkedin.com/pulse/functions-first-class-citizens-java-jer%C3%B3nimo-calvo-s%C3%A1nchez-zsskf",
+    "image": "./img/article-cover-java-fp-functions-first-class.png",
+    "date": "2025-01-07",
+    "tags": ["SoftwareDevelopment", "Java", "FunctionalProgramming", "Functions"],
+    "series": "Programación Funcional en Java"
+  }, {
+    "id": "java-fp-data-immutability",
+    "title": "Data Immutability in Java",
+    "url": "https://www.linkedin.com/pulse/data-immutability-java-jer%C3%B3nimo-calvo-s%C3%A1nchez-krr2f",
+    "image": "./img/article-cover-java-fp-data-immutability.png",
+    "date": "2025-01-06",
+    "tags": ["SoftwareDevelopment", "Java", "FunctionalProgramming", "Data"],
+    "series": "Programación Funcional en Java"
+}, {
+    "id": "java-fp-intro",
+    "title": "Functional Programming in Java",
+    "url": "https://www.linkedin.com/pulse/functional-programming-java-jer%C3%B3nimo-calvo-s%C3%A1nchez-ybvdf",
+    "image": "./img/article-cover-java-fp-intro.png",
+    "date": "2025-01-02",
+    "tags": ["SoftwareDevelopment", "Java", "FunctionalProgramming"],
+    "series": "Programación Funcional en Java"
+  }, {
+    "id": "fp-intro",
+    "title": "Introduction to Functional Programming",
+    "url": "https://www.linkedin.com/pulse/introduction-functional-programming-jer%C3%B3nimo-calvo-s%C3%A1nchez-p2s8f",
+    "image": "./img/article-cover-fp-intro.png",
+    "date": "2025-01-01",
+    "tags": ["SoftwareDevelopment", "FunctionalProgramming"],
+    "series": "Programación Funcional en Java"
+  }, {
     "id": "agile-manifesto-v1-1",
     "title": "My Agile Manifesto v1.1",
     "url": "https://www.linkedin.com/pulse/my-agile-manifesto-v11-jer%C3%B3nimo-calvo-s%C3%A1nchez-5wlmf",
     "image": "./img/article-cover-my-agile-manifesto-v1-1.jpg",
-    "date": "2023-05-12",
-    "tags": ["Agile", "Mindset"],
+    "date": "2023-10-30",
+    "tags": ["Agile"],
     "series": null
-  },
-  {
+  }, {
     "id": "tdd-effective-planning",
     "title": "Test-Driven Development (TDD) for Effective Planning",
     "url": "https://www.linkedin.com/pulse/test-driven-development-tdd-effective-planning-jer%C3%B3nimo-calvo-s%C3%A1nchez-kqvjf",
     "image": "./img/article-cover-tdd-for-effective-planning.jpg",
-    "date": "2023-04-03",
+    "date": "2024-03-23",
     "tags": ["TDD", "Planning", "SoftwareDevelopment"],
     "series": null
-  },
-  {
+  }, {
     "id": "menos-es-mas",
     "title": "Menos es Más. Aumentar la productividad del sistema reduciendo",
     "url": "https://www.linkedin.com/pulse/menos-es-m%C3%A1s-aumentar-la-productividad-del-sistema-calvo-s%C3%A1nchez-kehve",
     "image": "./img/article-cover-menos-es-mas.jpg",
-    "date": "2023-02-14",
+    "date": "2024-10-04",
     "tags": ["Productividad", "Simplicidad", "Sistemas"],
     "series": null
-  },
-  {
+  }, {
     "id": "prioritization-highest-risk",
     "title": "The Power of Prioritization: Mitigating the Highest Risk in Software Development",
     "url": "https://www.linkedin.com/pulse/power-prioritization-mitigating-highest-risk-software-calvo-s%C3%A1nchez-fqacf",
     "image": "./img/article-cover-prioritization-mitigating-highest-risk.jpg",
-    "date": "2023-01-20",
+    "date": "2024-03-02",
     "tags": ["Prioritization", "RiskManagement", "SoftwareDevelopment"],
     "series": null
   }
